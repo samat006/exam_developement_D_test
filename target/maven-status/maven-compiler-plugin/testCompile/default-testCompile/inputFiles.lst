@@ -1,2 +1,4 @@
-/home/seck/Documents/corte/S2/exam/src/test/java/repository/CarRepositoryTest.java
-/home/seck/Documents/corte/S2/exam/src/test/java/service/CarRentalServiceTest.java
+/home/seck/Documents/corte/S2/exam/src/test/java/com/example/rental/CarRepositoryTest.java
+/home/seck/Documents/corte/S2/exam/src/test/java/com/example/rental/CarRentalStepDefinitions.java
+/home/seck/Documents/corte/S2/exam/src/test/java/com/example/rental/CarControllerTest.java
+/home/seck/Documents/corte/S2/exam/src/test/java/com/example/rental/CarRentalServiceTest.java

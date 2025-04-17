@@ -4,11 +4,12 @@ package com.example.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.Car;
+import com.example.rental.Car;
 import com.example.repository.CarRepository;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class CarRentalService {
@@ -41,4 +42,20 @@ public class CarRentalService {
     public void setCarRepository(CarRepository carRepository) {
         this.carRepository = carRepository;
     }
+
+    public boolean addCarIfNotExists(Car car) {
+        Optional<Car> existing = carRepository.findByRegistrationNumber(car.getRegistrationNumber());
+        if (existing.isPresent()) {
+            return false;
+        }
+        carRepository.addCar(car);
+        return true;
+    }
+    public List<Car> findCarsByModel(String model) {
+    return carRepository.getAllCars().stream()
+            .filter(c -> c.getModel().equalsIgnoreCase(model))
+            .collect(Collectors.toList());
+}
+
+    
 }

@@ -4,7 +4,7 @@ package com.example.repository;
 
 import org.springframework.stereotype.Repository;
 
-import com.example.Car;
+import com.example.rental.Car;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,2 +1,3 @@
-service/CarRentalServiceTest.class
-repository/CarRepositoryTest.class
+com/example/rental/CarRentalServiceTest.class
+com/example/rental/CarControllerTest.class
+com/example/rental/CarRentalStepDefinitions.class
